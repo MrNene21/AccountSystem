@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "DEMO_ACCOUNT_TYPE", schema = "VITRSA_SANDBOX")
+@Table(name = "MEMBER_INFO", schema = "VITRSA_SANDBOX")
 
 public class AccountType implements Serializable{
 
@@ -14,15 +14,18 @@ public class AccountType implements Serializable{
     @Id
     @SequenceGenerator(name = "VIT_RSA_GENERIC_SEQ", sequenceName = "VITRSA_SANDBOX.VIT_RSA_GENERIC_SEQ", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "VIT_RSA_GENERIC_SEQ")
-    @Column(name = "ACCOUNT_TYPE_ID")
-    private Long accountTypeID;
+    @Column(name = "MEMBER_ID")
+    private Long memberID;
 
-    @Column(name = "MNEMONIC")
-    private String mnemonic;
+    @Column(name = "MEMBER_FIRST_NAME")
+    private String memberFirstNAme;
 
-    @Column(name = "ACCOUNT_TYPE_NAME")
-    private String accountTypeName;
+    @Column(name = "MEMBER_LAST_NAME")
+    private String memberFirstName;
 
-    @Column(name = "CREATION_DATE")
-    private LocalDate creationDate;
+    @Column(name = "MEMBER_MILES")
+    private long memberMiles;
+
+    @Column(name = "MEMBER_JOINING_DATE")
+    private LocalDate memberLastName;
 }
