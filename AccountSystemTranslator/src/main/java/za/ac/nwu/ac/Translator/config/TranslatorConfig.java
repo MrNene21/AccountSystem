@@ -1,4 +1,4 @@
-package za.ac.nwu.translator.config;
+package za.ac.nwu.ac.Translator.config;
 
 @Import({RepositoryConfig.class})
 @Configuration
