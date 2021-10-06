@@ -4,4 +4,3 @@ package za.ac.nwu.translator.config;
 @Configuration
 public class TranslatorConfig {
 }
-  
