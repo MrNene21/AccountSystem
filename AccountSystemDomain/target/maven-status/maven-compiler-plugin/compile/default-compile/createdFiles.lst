@@ -1,3 +1,4 @@
 za\ac\nwu\ac\domain\persistence\Goals.class
 za\ac\nwu\ac\domain\persistence\MemberInfo.class
+za\ac\nwu\ac\domain\dto\AccountTypeDto.class
 za\ac\nwu\ac\domain\service\GeneralResponse.class
