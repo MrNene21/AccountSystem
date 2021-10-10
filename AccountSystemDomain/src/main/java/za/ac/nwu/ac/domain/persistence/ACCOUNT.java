@@ -14,13 +14,13 @@ public class ACCOUNT implements Serializable {
     private static final long serialVersionUID = 9111128237243028273L;
 
     private long accountID;
-    private long accountMiles;
+    private int accountMiles;
     private  LocalDate accountCreationDate;
     private MEMBER member;
 
     private Set<TRANSACTION> transactions;
 
-    public ACCOUNT(long accountID, long accountMiles, LocalDate accountCreationDate, MEMBER member) {
+    public ACCOUNT(long accountID, int accountMiles, LocalDate accountCreationDate, MEMBER member) {
         this.accountID = accountID;
         this.accountMiles = accountMiles;
         this.accountCreationDate = accountCreationDate;
@@ -53,7 +53,7 @@ public class ACCOUNT implements Serializable {
         return accountMiles;
     }
 
-    public void setAccountMiles(long accountMiles) {
+    public void setAccountMiles(int accountMiles) {
         this.accountMiles = accountMiles;
     }
 
