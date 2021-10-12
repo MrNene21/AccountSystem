@@ -3,6 +3,7 @@ package za.ac.nwu.ac.logic.flow.impl;
 import org.springframework.stereotype.Component;
 import za.ac.nwu.ac.domain.dto.AccountDto;
 import za.ac.nwu.ac.logic.flow.CreateAccountFlow;
+import za.ac.nwu.ac.translator.AccountTranslator;
 
 import javax.transaction.Transactional;
 
@@ -18,6 +19,9 @@ public class CreateAccountFlowImpl implements CreateAccountFlow {
 
     @Override
     public AccountDto create(AccountDto account) {
-        if (null == account.get)
+        if (null == account.getAccountCreationDate()) {
+            account.getAccountCreationDate();
+        }
+        return accountTranslator.create(account);
     }
 }

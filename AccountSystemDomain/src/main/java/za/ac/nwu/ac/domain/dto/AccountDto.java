@@ -33,10 +33,54 @@ public class AccountDto implements Serializable {
 
     @ApiModelProperty(position = 1,
     value = "ACCOUNT Miles",
-    name = "Uniquely identifies the account",
-    dataType = "java.lang.String",
+    name = "Miles",
+    notes = "Uniquely identifies the account",
+    dataType = "java.lang.int",
     example = "MILES",
-    required = true)
+    required = true
+    )
+
+    public int getMiles() {
+        return miles;
+    }
+    public void setMiles(int miles){ this.miles = miles;}
+
+    @ApiModelProperty(position = 2,
+            value = "Account Creation Date",
+            name = "CreationDate",
+            notes = "This is the date on which the Account was created",
+            dataType = "java.long.String",
+            example = "2020-01-01",
+            allowEmptyValue = true
+    )
+
+    public LocalDate getAccountCreationDate(){return accountCreationDate;}
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AccountDto that = (AccountDto) o;
+        return Objects.equals(miles, that.miles) &&Objects.equals(accountCreationDate, that.accountCreationDate);
+    }
+
+    @JsonIgnore
+    public ACCOUNT getAccount(){
+        return new ACCOUNT(getMiles(), getAccountCreationDate());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(miles, accountCreationDate);
+    }
+
+    @Override
+    public String toString() {
+        return "AccountDto{" +
+                "miles=" + miles +
+                ", accountCreationDate=" + accountCreationDate +
+                '}';
+    }
 
     private void setAccountCreationDate(LocalDate accountCreationDate) {
     }
@@ -44,6 +88,5 @@ public class AccountDto implements Serializable {
     private void setMiles(long accountMiles) {
     }
 
-    public void getAccount() {
-    }
+
 }
