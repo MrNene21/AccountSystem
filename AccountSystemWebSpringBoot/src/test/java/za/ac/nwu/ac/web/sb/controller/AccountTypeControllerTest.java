@@ -1,3 +1,4 @@
+/*
 package za.ac.nwu.ac.web.sb.controller;
 
 import org.junit.Before;
@@ -29,7 +30,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class AccountTypeControllerTest {
+class AccountTypeControllerTest {
     private static final String APP_URL = "/account-system/mvc";
     private static final String ACCOUNT_TYPE_CONTROLLER_URL = APP_URL + "/account-type";
     @Mock
@@ -170,3 +171,4 @@ public class AccountTypeControllerTest {
     }
 
 }
+*/

@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Set;
 
-@Entity
+//@Entity
 @Table(name = "MEMBER", schema = "LUYANDA")
 
 public class MEMBER implements Serializable{

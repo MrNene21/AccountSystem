@@ -6,4 +6,5 @@ import za.ac.nwu.ac.domain.persistence.ACCOUNT;
 
 @Repository
 public interface AccountRepository extends JpaRepository<ACCOUNT, Long> {
+    Object addMiles(long l, long l1);
 }

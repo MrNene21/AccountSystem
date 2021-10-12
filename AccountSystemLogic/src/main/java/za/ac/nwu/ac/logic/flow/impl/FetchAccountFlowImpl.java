@@ -13,12 +13,12 @@ import java.util.List;
 @Component
 public class FetchAccountFlowImpl implements FetchAccountFlow {
 
-    private final AccountTranslator accountTranslator;
+    private final AccountTranslator accountTranslator = null;
 
-    @Autowired
+    /*@Autowired
     public FetchAccountFlowImpl(AccountTranslator accountTranslator) {
         this.accountTranslator = accountTranslator;
-    }
+    }*/
 
 
     @Override

@@ -1,3 +1,4 @@
+/*
 package za.ac.nwu.ac.web.sb.controller;
 
 import io.swagger.annotations.ApiOperation;
@@ -64,3 +65,4 @@ public class AccountTypeController {
 
 }
 
+*/

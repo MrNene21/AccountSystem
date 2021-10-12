@@ -1,3 +1,4 @@
+/*
 package za.ac.nwu.ac.translator.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,3 +45,4 @@ public class AccountTranslatorImpl implements AccountTranslator {
         }
     }
 }
+*/
