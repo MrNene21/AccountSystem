@@ -16,5 +16,5 @@ import java.util.List;
 //@EnableJpaRepositories("za.ac.nwu.ac.repo")
 //@ComponentScan({"za.ac.nwu.ac.repo"})
 public interface AddService {
-    List<MEMBER> addMiles(Long member_id, Long miles);
+    List<MEMBER> addMiles(Long member_id, Long miles) throws Exception;
 }
